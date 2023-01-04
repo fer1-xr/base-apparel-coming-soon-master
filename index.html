@@ -16,13 +16,15 @@
 </head>
 <body>
 
-  <div class="logo">
-    <img src="./images/logo.svg" alt="">
-  </div>
+ 
+   
+ 
   <main>
+    <img src="./images/logo.svg" alt="" class="logo">
+    <div class="inner-container">
     
-    <div class="card">
-  
+    <article class="left">
+      
          <h1><span style="font-weight: 200; margin: 8px 0 0 0 ;">WE'RE</span> </h1>
            <h1>COMING </h1>
           <h1>SOON</h1>
@@ -34,20 +36,29 @@
       <form action="" method="post">
         <input type="email" name="" placeholder= "  Email Address" id="" >
         <label for="email">
-          <img src="./images/icon-error.svg" alt="" />
+          <img src="./images/icon-error.svg" alt="" class="img"/>
        </label>
-      <button><img src="./images/icon-arrow.svg" alt=""></button>
+       <button><img src="./images/icon-arrow.svg" alt=""></button>
       </form>
       <p class="msg">
       <span>Yay! Thank you!
        We’ve sent a confirmation link to your inbox.</span>
         </p>
-    </div>
-    <div class="people">
-      <img src="./images/hero-desktop.jpg" alt="" 
-      srcset="./images/hero-mobile.jpg 375w"  >
-     
-    </div>
-</main>
+      </article>
+    
+    <article class="right">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/hero-desktop.jpg" class="desktop"
+        />
+        <img src="./images/hero-mobile.jpg" alt="" class="mobile" />
+      </picture>
+    </article>
+  </div>
+  </main>
+
+ 
+
 </body>
 </html>
