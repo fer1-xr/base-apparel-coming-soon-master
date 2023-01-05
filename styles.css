@@ -62,17 +62,35 @@ footer p {
 }
 input{
     border: 1px solid hsl(0, 36%, 70%);
-    width: 75%;
+    width: 100%;
     padding: 15px;
     border-radius: 35px;
     height: 55px;
     font-size: 16px;
     max-width: 475px;
+    outline: none;
     margin-left: 25px;
+}
+.message{
+   
+    margin-left: 35px;
+    color: red;
 }
 .msg{
     display: none;
 }
+.icon{
+    margin-left: 245px;
+    margin-top: 0.5rem;
+}
+.error{
+    display: none;
+  
+}
+.big-error{
+    display: none;
+}
+
 .inner-container{
      margin: auto;
     display: flex;
@@ -85,6 +103,9 @@ margin: auto;
 form {
   position: relative;
 }
+.box{
+    max-width: 350px;
+}
 article{
    text-align: left;
 }
@@ -94,7 +115,7 @@ button{
    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 top: 0;
 border: 0;
-right: 82px;
+right: -50px;
 height: 55px;
 width: 100px;
 border-radius: 50px;
@@ -106,18 +127,16 @@ button:hover{
     background-color: hsl(0, 64%, 70%)
 }
 .error{
-    display: none;
+    margin-left: 245px;
     margin-top: 0.5rem;
 }
 .message{
-    margin-left: 35px;
+    margin-top: -27px;
     color: red;
 }
-.big-error{
-    display: none;
-}
+
 /* tablets*/
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .inner-container{
     display: flex;
@@ -126,8 +145,21 @@ button:hover{
   
    
 }
+input{
+    outline: none;
+}
+.error{
+    margin-left: 425px;
+    
+    margin-top: 0.5rem;
+}
+.message{
+  
+    margin-top: -27px;
+    color: red;
+}
 main article picture img {
-    margin-top: -156px;
+    margin-top: -92px;
     width: 100%;
 
   }
@@ -136,54 +168,67 @@ main article picture img {
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
  top: 0;
  border: 0;
- right: 77px;
+
  height: 55px;
  width: 100px;
  border-radius: 50px;
  padding: 15px;
  
  }
+ .left{
+    margin-top: 40px;
+}
 .logo{
     display: block;
     margin-left: 40px;
     width: 150px;
-    margin-top: 55px;
+   
 }
 main article{
     flex: 1;
 }
-input{
-    width: 75%;
-}
+
 
 }
 /* desktop*/
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
+    body{
+        overflow: hidden;
+    }
     main article picture img {
         margin-top: -116px;
-        max-width: 73%;
-        margin-left: 194px;
+        max-width: 75%;
+        margin-left: 192px;
+        
       }
+      .icon {
+        margin-left: 420px;
+        margin-top: 0.5rem;}
+        .message{
+           
+            margin-left: 210px;
+           
+        }
 .left{
-    margin-left: 100px;
+    margin-top: -60px;
     text-align: left;
 }
 
-
+p{
+    margin-left: 203px;
+}
 h1{
-    margin-left: 35px;
-    
+    margin-left: 203px;
+    font-size: 40px;
 }
-input{
-    width: 75%;
-}
+
 button{
     position: absolute;
     background-image: linear-gradient(135deg, hsl(0, 50%, 86%), hsl(0,44%, 74%));
-   
+    transition: opacity 0.2s ease;
  top: 0;
  border: 0;
- right: 218px;
+right: -250px;
  height: 55px;
  width: 100px;
  border-radius: 50px;
@@ -192,11 +237,45 @@ button{
  }
  button:hover{
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+   
  }
  .logo{
     display: block;
-    margin-left: 145px;
+    margin-left: 203px;
     width: 150px;
   
 }
+input{
+    margin-left: 203px;
+    outline: none;
+}
+}
+@media (min-width:1100px) and (max-width: 1400px) {
+    .left{
+        margin-top: 30px;
+        text-align: left;
+    }
+    main article picture img {
+        max-width: 88%;
+        margin-left: 95px;
+      }
+}
+
+@media (min-width:1900px){
+    .left{
+        margin-top: 30px;
+        text-align: left;
+    }
+    main article picture img {
+        max-width: 44%;
+        margin-left: 172px;
+        margin-top: -171px;
+      }
+      .logo {
+        display: block;
+        margin-left: 203px;
+        width: 270px;
+        margin-top: 55px;
+      }
 }
