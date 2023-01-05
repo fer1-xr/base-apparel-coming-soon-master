@@ -14,6 +14,7 @@ body{
 img {
     max-width: 100%;
     margin: 0;
+    
   }
 
 .logo{
@@ -93,17 +94,26 @@ button{
    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 top: 0;
 border: 0;
-right: 18px;
+right: 82px;
 height: 55px;
 width: 100px;
 border-radius: 50px;
 padding: 15px;
 
+
 }
 button:hover{
     background-color: hsl(0, 64%, 70%)
 }
-label{
+.error{
+    display: none;
+    margin-top: 0.5rem;
+}
+.message{
+    margin-left: 35px;
+    color: red;
+}
+.big-error{
     display: none;
 }
 /* tablets*/
@@ -117,7 +127,7 @@ label{
    
 }
 main article picture img {
-    margin-top: -116px;
+    margin-top: -156px;
     width: 100%;
 
   }
@@ -126,7 +136,7 @@ main article picture img {
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
  top: 0;
  border: 0;
- right: 68px;
+ right: 77px;
  height: 55px;
  width: 100px;
  border-radius: 50px;
@@ -141,6 +151,9 @@ main article picture img {
 }
 main article{
     flex: 1;
+}
+input{
+    width: 75%;
 }
 
 }
@@ -158,21 +171,27 @@ main article{
 
 
 h1{
-    margin-left: 40px;
+    margin-left: 35px;
     
 }
-
+input{
+    width: 75%;
+}
 button{
     position: absolute;
-    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-image: linear-gradient(135deg, hsl(0, 50%, 86%), hsl(0,44%, 74%));
+   
  top: 0;
  border: 0;
- right: 188px;
+ right: 218px;
  height: 55px;
  width: 100px;
  border-radius: 50px;
  padding: 15px;
- 
+ cursor: pointer;
+ }
+ button:hover{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
  }
  .logo{
     display: block;

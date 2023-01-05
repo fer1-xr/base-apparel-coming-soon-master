@@ -33,17 +33,27 @@
           <p> Hello fellow shoppers! We're currently building our new fashion store. 
            Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-      <form action="" method="post">
-        <input type="email" name="" placeholder= "  Email Address" id="" >
+      <form action="" id="form" >
+        <input type="email" name=""  value placeholder="ejemplo@dominio.com" id="input"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required minlength="6" maxlength="60">
+       
         <label for="email">
-          <img src="./images/icon-error.svg" alt="" class="img"/>
-       </label>
-       <button><img src="./images/icon-arrow.svg" alt=""></button>
+          <img src="./images/icon-error.svg" alt="" class="error" />
+        </label>
+    
+       <button id="btn" type="submit" href="#"><img src="./images/icon-arrow.svg" alt=""></button>
       </form>
+      <p class="message big-error">
+        
+        
+          Please provide a valid email
+         </span>
+      
+      </p>
       <p class="msg">
       <span>Yay! Thank you!
        We’ve sent a confirmation link to your inbox.</span>
         </p>
+      
       </article>
     
     <article class="right">
@@ -58,7 +68,7 @@
   </div>
   </main>
 
- 
+<script src="./index.js"></script>
 
 </body>
 </html>
